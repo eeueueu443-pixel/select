@@ -1,0 +1,63 @@
+.old-select {
+    opacity: 0;
+    position: absolute;
+}
+
+.select {
+    position: relative;
+    border-radius: 5px;
+    width: 166px;
+    font-size: 20px;
+    height: 34px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    overflow: hidden;
+}
+
+.select__placeholder {
+    cursor: pointer;
+    background-color: rgb(196, 240, 255);
+    z-index: 10;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.select__placeholder:hover {
+    background-color: rgb(181, 224, 238);;
+}
+
+.select__arrow.rotate-arrow {
+    transition: transform 0.3s ease; 
+    transform: rotate(180deg);
+}
+
+.select__options {
+    cursor: pointer;
+    background-color: rgb(196, 240, 255);
+    z-index: 1;
+    width: 166px;
+    box-sizing: border-box;
+    position: absolute;
+    top: -195px;
+    border-radius: 5px;
+    border: solid 1px black;
+    transition: transform 0.3s ease; 
+}
+
+.select__option:hover {
+    background-color: white;
+}
+
+.select__option {
+    padding: 5px;
+}
+
+.select__options.show-options {
+    transform: translateY(235px);
+}

@@ -7,7 +7,7 @@ const arrow = document.querySelector('.select__arrow');
 
 button.addEventListener('click', ()=> {
     options.classList.toggle('show-options');
-    select.style.height = '274px';
+    select.style.height = '297px';
     arrow.classList.toggle('rotate-arrow');
 });
 
